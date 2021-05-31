@@ -1,0 +1,55 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "babel"
+    ],
+    "settings": {
+      "react": {
+       "pragma": "React",
+       "version": "17.0"
+      }
+    },
+    "rules": {
+      "indent": ["error", 4, {
+        "SwitchCase": 1
+      }],
+      "linebreak-style": ["error", "unix"],
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "no-duplicate-imports": "error",
+      "no-unused-vars": "error",
+      "no-dupe-args": "error",
+      "no-dupe-keys": "error",
+      "no-duplicate-case": "error",
+      "no-sparse-arrays": "error",
+      "curly": "error",
+      "eqeqeq": "error",
+      "no-multi-spaces": "error",
+      "func-call-spacing": "error",
+      "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+      "no-trailing-spaces": "error",
+      "arrow-parens": "error",
+      "arrow-spacing": "error",
+      "no-var": "error",
+      "jsx-a11y/anchor-is-valid": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react/react-in-jsx-scope": "off"
+    }
+}

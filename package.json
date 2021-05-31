@@ -1,0 +1,51 @@
+{
+  "name": "Twitter",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jsonwebtoken": "*",
+    "react": "latest",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "react-router-redux": "*",
+    "react-scripts": "*",
+    "redux": "latest",
+    "redux-devtools-extension": "*",
+    "tailwindcss": "latest"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "start": "yarn build:css && react-scripts start",
+    "build": "yarn build:css && react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "*",
+    "eslint-plugin-babel": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-import": "*",
+    "postcss-nested": "*",
+    "autoprefixer": "*"
+  }
+}
